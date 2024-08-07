@@ -5,6 +5,7 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+  workflow_dispatch: # This allows manual triggers of the workflow
 
 jobs:
   build:
@@ -31,4 +32,3 @@ jobs:
       with:
         name: outputs-apk-minidebug
         path: app/build/outputs/apk/miniDebug
-        
